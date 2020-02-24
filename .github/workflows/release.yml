@@ -20,6 +20,10 @@ jobs:
         run: npm ci
       - name: Test
         run: npm run test:prod
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Build
         run: npm run build
       - name: Release
