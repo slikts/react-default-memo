@@ -5,6 +5,6 @@ describe("createValueElement", () => {
     const el1 = createValueElement("div", { a: { b: 1 } });
     const el2 = createValueElement("div", { a: { b: 1 } });
 
-    expect(el1).toBe(el2);
+    expect(el1).toEqual(el2);
   });
 });
