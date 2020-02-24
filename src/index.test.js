@@ -1,6 +1,5 @@
 import { createValueElement } from "../src";
-import { shallow } from "tuplerone";
-import { ValueObject } from "tuplerone";
+import { shallowKey } from "tuplerone";
 
 describe("createValueElement", () => {
   it("works with props", () => {
@@ -17,7 +16,7 @@ describe("createValueElement", () => {
     a.b = b;
     expect(() => createValueElement(() => null, a)).toThrow();
     const c = { a };
-    c.a[shallow] = true;
+    c.a[shallowKey] = true;
     expect(() => createValueElement(() => null, c)).not.toThrow();
   });
 });
