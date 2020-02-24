@@ -9,7 +9,9 @@
   <img src="https://badgen.net/dependabot/slikts/react-default-memo" alt="Dependabot">
 </p>
 
-[Demo].
+This is a proof of concept for "memoizing" React components by default and in a more comprehensive way than is possible either with React builtins like `memo()` or `useMemo()`, or with libraries like [use-deep-compare-effect] and [react-fast-compare].
+
+**[Demo][demo]** (CodeSandbox).
 
 ## Installation
 
@@ -30,5 +32,13 @@ Add at the top of a file:
 import { createValueElement } from "react-default-memo";
 ```
 
+This replaces the React builtin `createElement()` with a custom `createValueElement()` function using the `@babel/plugin-transform-react-jsx` plugin (included by default in tools like `create-react-app`).
+
+## License
+
+MIT
+
+[use-deep-compare-effect]: https://github.com/kentcdodds/use-deep-compare-effect
+[react-fast-compare]: https://github.com/FormidableLabs/react-fast-compare
 [tuplerone]: https://github.com/slikts/tuplerone
 [demo]: https://codesandbox.io/s/react-default-memo-demo-y3kp7
