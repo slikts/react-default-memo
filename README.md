@@ -16,7 +16,7 @@ This is a proof of concept for "memoizing" React components by default and in a 
 ## Installation
 
 ```sh
-npm i react-default memo
+npm i react-default-memo
 ```
 
 ```sh
