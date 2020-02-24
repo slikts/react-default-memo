@@ -64,8 +64,8 @@
   "jest": {
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "collectCoverageFrom": [
-      "/src/**/*.js",
-      "!/src/**/*.test.js"
+      "src/**/*.js",
+      "!src/**/*.test.js"
     ]
   },
   "prettier": {
