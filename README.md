@@ -1,6 +1,7 @@
 <h1 align="center">react-default-memo</h1>
 
 <p align="center">
+  <img alt="npm" src="https://img.shields.io/npm/v/react-default-memo">
   <img alt="npm (tag)" src="https://img.shields.io/npm/v/react-default-memo/alpha">
   <img src="https://github.com/slikts/react-default-memo/workflows/Build/badge.svg" alt="Release">
   <a href="https://coveralls.io/github/slikts/react-default-memo"><img src="https://img.shields.io/coveralls/slikts/react-default-memo.svg" alt="Coveralls"></a>
