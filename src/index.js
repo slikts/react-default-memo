@@ -1,5 +1,3 @@
-/** @jsx createValueElement */
-
 import { createElement } from "react";
 import { ValueObject } from "tuplerone";
 
