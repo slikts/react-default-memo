@@ -2,8 +2,9 @@ import { createValueElement } from "react-default-memo";
 
 describe("createValueElement", () => {
   it("works", () => {
-    const el = createValueElement("div", {});
+    const el1 = createValueElement("div", { a: { b: 1 } });
+    const el2 = createValueElement("div", { a: { b: 1 } });
 
-    console.log(el);
+    expect(el1).toEqual(el2);
   });
 });
